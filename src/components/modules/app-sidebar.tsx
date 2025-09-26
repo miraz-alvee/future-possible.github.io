@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Calendar, Home, Inbox, Search, Settings, Verified } from "lucide-react"
 import headerImage from "../../../public/dashboard-img.png"
 
 import {
@@ -43,12 +43,12 @@ const items = [
   {
     title: "Versioning",
     url: "/versioning",
-    icon: Search,
+    icon: Verified,
   },
   {
     title: "Analytics",
     url: "/analytics",
-    icon: Search,
+    icon: Inbox,
   },
 ]
 
