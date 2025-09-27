@@ -61,13 +61,13 @@ export default function ChartGraphComponentPage() {
                         data={dropoutData}
                         cx={100}
                         cy={100}
-                        innerRadius={60}
+                        innerRadius={55}
                         outerRadius={85}
-                        paddingAngle={5}
+                        paddingAngle={10}
                         dataKey="value"
                       >
                         {dropoutData.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={entry.color} />
+                          <Cell key={`cell-${index}`} fill={entry.color} className='shadow-[#682ECC5C] rounded-b-3xl' />
                         ))}
                       </Pie>
                     </PieChart>
@@ -79,7 +79,7 @@ export default function ChartGraphComponentPage() {
                   </div>
                 </div>
               </div>
-              <div className='mt-5 px-5'>
+              <div className='mt-5 p-5'>
                 <ScrollArea className="w-[300px] hr-none">
                   {dropoutData.map((item, index) => (
                     <div key={index} className="flex items-center justify-between py-3 border-1 border-l-0 border-r-0 border-[#F3EFF9]">
